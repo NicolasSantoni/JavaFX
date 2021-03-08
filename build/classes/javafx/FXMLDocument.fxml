@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="271.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.FXMLDocumentController">
+    <children>
+        <Button fx:id="enviar" layoutX="171.0" layoutY="185.0" onAction="#cadastrar" text="ENVIAR" />
+        <Label fx:id="mensagem" alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="218.0" minHeight="16" minWidth="69" prefHeight="18.0" prefWidth="400.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="48.0" layoutY="13.0" prefHeight="27.0" prefWidth="301.0" text="CADASTRO" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font name="Times New Roman Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nome" layoutX="22.0" layoutY="52.0" prefHeight="26.0" prefWidth="149.0" promptText="Nome" />
+      <DatePicker fx:id="nascimento" layoutX="227.0" layoutY="52.0" prefHeight="26.0" prefWidth="149.0" promptText="Data de Nascimento" />
+      <TextField fx:id="email" layoutX="22.0" layoutY="97.0" promptText="Email" />
+      <TextField fx:id="telefone" layoutX="22.0" layoutY="143.0" promptText="Telefone" />
+      <TextField fx:id="cpf" layoutX="228.0" layoutY="97.0" promptText="CPF" />
+      <ComboBox fx:id="sangue" layoutX="227.0" layoutY="143.0" prefWidth="150.0" promptText="Tipo Sanguíneo" />
+    </children>
+</AnchorPane>
